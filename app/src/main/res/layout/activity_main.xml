@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/heroIMG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:srcCompat="@drawable/hero"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study\nAbroader"
+                android:textColor="@color/white"
+                android:textSize="64sp"
+                android:fontFamily="@font/aloevera"
+                android:id="@+id/title"
+                android:textAlignment="center"
+                android:lineSpacingExtra="-18dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:paddingTop="150dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Better Way\nTo Study Abroad"
+                android:textColor="@color/white"
+                android:layout_below="@+id/title"
+                android:textAlignment="center"
+                android:fontFamily="@font/headlandone"
+                android:id="@+id/subTitle"
+                android:textSize="20sp"
+                android:layout_marginBottom="100dp"/>
+
+            <Button
+                android:layout_width="275dp"
+                android:layout_height="60dp"
+                android:text="Sign Up"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/subTitle"
+                android:id="@+id/signUpButton"
+                android:background="@drawable/signup_button"
+                android:textColor="@color/black"
+                android:fontFamily="@font/headlandone"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:layout_width="275dp"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/signUpButton"
+                android:id="@+id/logInButton"
+                android:background="@drawable/login_button"
+                android:textColor="@color/white"
+                android:fontFamily="@font/headlandone"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

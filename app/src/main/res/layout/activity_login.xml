@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/back_ground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/topLinLayout">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back To"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:fontFamily="@font/headlandone"
+                android:id="@+id/welcomeTag"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/big_app_title"
+                android:textColor="@color/black"
+                android:textSize="64sp"
+                android:fontFamily="@font/aloevera"
+                android:id="@+id/title"
+                android:textAlignment="center"
+                android:lineSpacingExtra="-18dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowDy="4"
+                android:shadowRadius="2"
+                android:layout_below="@id/welcomeTag"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:textSize="20sp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                style="@style/editText"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTextEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:hint="Password"
+                style="@style/editText"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/editTextTextPassword"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTextPassword"
+                android:layout_centerHorizontal="true"
+                android:text="Login"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:fontFamily="@font/headlandone"
+                android:textAllCaps="false"
+                android:textAlignment="viewStart"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/continue_button"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/backButton"
+                android:visibility="gone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/submitButton"
+                android:layout_centerHorizontal="true"
+                android:text="Return"
+                android:textColor="@color/black"
+                android:fontFamily="@font/headlandone"
+                android:textAllCaps="false"
+                android:textAlignment="viewEnd"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/signup_button"
+                android:drawableLeft="@drawable/baseline_arrow_back_24"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/submitButton"
+                android:text="Don't have an account? Signup!"
+                android:textAllCaps="false"
+                android:background="@drawable/login_button"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/goToSignupBtn"
+                android:textColor="@color/black"
+                android:fontFamily="@font/headlandone" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
